@@ -1,0 +1,18 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--primary:#3385ff;--bg:#fff}
+body{font-family:Segoe UI, Roboto, "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif;background:linear-gradient(#f5f7fb,#fff);color:#222;min-height:100vh}
+.container{max-width:980px;margin:0 auto;padding:0 20px}
+.topbar{height:56px}
+.topbar-inner{display:flex;justify-content:flex-end;align-items:center;height:56px}
+.topbar .links a{margin-left:18px;color:#666;text-decoration:none;font-size:14px}
+.hero{display:flex;align-items:center;justify-content:center;height:calc(100vh - 112px)}
+.center{text-align:center}
+.logo{font-size:56px;color:var(--primary);font-weight:700;margin-bottom:28px}
+.search{display:inline-block;width:640px;max-width:88vw}
+.search input[type=search]{width:100%;padding:14px 16px;border:1px solid #dcdfe6;border-radius:24px;font-size:18px;outline:none}
+.search input[type=search]:focus{box-shadow:0 0 0 4px rgba(51,133,255,0.08);border-color:var(--primary)}
+.buttons{display:flex;justify-content:center;margin-top:18px;gap:12px}
+.btn{background:#f5f5f7;border:1px solid #d9d9dc;padding:8px 18px;border-radius:4px;cursor:pointer;font-size:14px}
+.btn.primary{background:var(--primary);color:#fff;border-color:transparent}
+.site-footer{height:56px;display:flex;align-items:center;justify-content:center;color:#888;font-size:13px;border-top:1px solid #f0f0f2}
+@media(max-width:640px){.logo{font-size:36px}.search{width:92vw}.search input[type=search]{font-size:16px;padding:12px 12px}}

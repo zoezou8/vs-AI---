@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>至元搜索 — www.zyyz.com</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <nav class="links">
+        <a href="#">新闻</a>
+        <a href="#">hao123</a>
+        <a href="#">地图</a>
+        <a href="#">登录</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="center">
+      <h1 class="logo">至元搜索</h1>
+
+      <form id="searchForm" class="search" onsubmit="return doSearch();">
+        <input id="q" name="q" type="search" placeholder="在 www.zyyz.com 上搜索" autocomplete="off" />
+        <div class="buttons">
+          <button type="submit" class="btn primary">搜索</button>
+          <button type="button" class="btn" onclick="feelingLucky()">手气不错</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>域名：www.zyyz.com · 演示站点</p>
+    </div>
+  </footer>
+
+  <script>
+    function doSearch(){
+      var q = document.getElementById('q').value.trim();
+      if(!q) return false;
+      var url = 'https://www.baidu.com/s?wd=' + encodeURIComponent(q);
+      window.location.href = url;
+      return false;
+    }
+    function feelingLucky(){
+      var q = document.getElementById('q').value.trim();
+      if(!q){
+        window.location.href = 'https://www.baidu.com/';
+        return;
+      }
+      window.location.href = 'https://www.baidu.com/s?wd=' + encodeURIComponent(q);
+    }
+  </script>
+</body>
+</html>
+ 
+git add.
+git commit -m "把新的代码更新到github"
+git push origin main
